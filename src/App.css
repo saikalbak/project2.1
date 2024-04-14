@@ -1,10 +1,10 @@
 @font-face {
   font-family: 's400';
-  src: url('./fonts/StolzlLight.ttf');
+  src: url('../public/fonts/StolzlLight.ttf');
 }
 @font-face {
   font-family: 's500';
-  src: url('./dist/fonts/Stolzl500.ttf');
+  src: url('../public/fonts/Stolzl500.ttf');
 }
 @font-face {
   font-family: 's700';
