@@ -75,7 +75,7 @@
     opacity: 1;
     transition: .5s;
     overflow: hidden;
-    background-image: url(../public/images/bgcimg2.svg);
+    background-image: url(./images/bgcimg2.svg);
     flex-direction: column;
     overflow: hidden;
 }

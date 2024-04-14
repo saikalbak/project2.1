@@ -1,8 +1,42 @@
 .margin{
     height: 250px;
 }
+#section_title{
+    font-size: 70px;
+    line-height: 90px;
+    text-align: center;
+    margin: auto;
+}
+.section_nav{
+    margin: 80px 0 100px 0;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+#section_nav_link{
+    font-size: 40px;
+}
 @media screen and (max-width:768px){
     .margin{
         height: 130px;
+    }
+    #section_title{
+        font-size: 40px;
+        line-height: 48px;
+        width: 70vw;
+    }
+    .section_nav{
+        display: flex;
+        justify-content: space-between;
+        overflow-x: scroll;
+        scroll-behavior: smooth;
+        flex-wrap: nowrap;
+        margin: 30px 0 50px 0;
+    }
+    ::-webkit-scrollbar{
+        display: none;
+    }
+    #section_nav_link{
+        font-size: 18px;
     }
 }

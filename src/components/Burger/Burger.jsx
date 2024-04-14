@@ -27,8 +27,8 @@ function Burger() {
         </div>
         <div className={styles.mobileMenu__container}>
           <ul className={styles.mobileMenu__list}>
-            <li><Link className='link' id={styles.link}>Car List</Link></li>
-            <li><Link className='link' id={styles.link}>Yacht list</Link></li>
+            <li><Link to='/cars' className='link' id={styles.link}>Car List</Link></li>
+            <li><Link to='cars' className='link' id={styles.link}>Yacht list</Link></li>
             <li><Link className='link' id={styles.link}>Chauffeur</Link></li>
             <li><Link to='/conditions' className='link' id={styles.link}>Conditions</Link></li>
             <li><Link className='link' id={styles.link}>Testimonials</Link></li>
