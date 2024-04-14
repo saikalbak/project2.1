@@ -10,7 +10,7 @@ function Footer() {
     <section>
       <div className={styles.mapAll}>
         <div className={styles.map}>
-          {/* <Map mapLink="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A9bf87c4350bad7871b464b6edba997c38000a6a37fba586ca60513b6390ce511&amp;width=1100&amp;height=860&amp;lang=ru_RU&amp;scroll=true"></Map> */}
+          <Map mapLink="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A9bf87c4350bad7871b464b6edba997c38000a6a37fba586ca60513b6390ce511&amp;width=1100&amp;height=860&amp;lang=ru_RU&amp;scroll=true"></Map>
         </div>
         <div className={styles.mapContent}>
           <div className="title" id={styles.mapContentTitle}>

@@ -19,7 +19,11 @@ function Home() {
                 <div className="section1_content">
                     <div className="title" id='title'>Most Popular</div>
                     <input type="text" placeholder='Car search' className='section1_content_input'/>
-                    <div className="section1_content_swiper">
+                    <div className="pre_swiper">
+                        <div className="scrollbar">
+                            <hr className='hr_scrollbar'/>
+                        </div>
+                        <div className="section1_content_swiper">
                         <div className="swiper_slides">
                             <div className="swiper_slide">
                                 <div className="boldtext" id='swiper_slide_title'>Audi</div>
@@ -41,10 +45,33 @@ function Home() {
                                 <div className="boldtext" id='swiper_slide_title'>Range Rover</div>
                                 <div className="text" id='swiper_slide_text'>Autobiography New 2022</div>
                             </div>
+                            <div className="swiper_slide">
+                                <div className="boldtext" id='swiper_slide_title'>Audi</div>
+                                <div className="text" id='swiper_slide_text'>Huracan EVO Spyder RS6</div>
+                            </div>
+                            <div className="swiper_slide">
+                                <div className="boldtext" id='swiper_slide_title'>Lamborghini</div>
+                                <div className="text" id='swiper_slide_text'>Urus</div>
+                            </div>
+                            <div className="swiper_slide">
+                                <div className="boldtext" id='swiper_slide_title'>Lamborghini</div>
+                                <div className="text" id='swiper_slide_text'>Huracan EVO Spyder</div>
+                            </div>
+                            <div className="swiper_slide">
+                                <div className="boldtext" id='swiper_slide_title'>Ferrari</div>
+                                <div className="text" id='swiper_slide_text'>Roma</div>
+                            </div>
+                            <div className="swiper_slide">
+                                <div className="boldtext" id='swiper_slide_title'>Range Rover</div>
+                                <div className="text" id='swiper_slide_text'>Autobiography New 2022</div>
+                            </div>
+                        </div>
                         </div>
                     </div>
                     <div className="section_btn">
-                        <Button w='215px' h='57px' br='10px' b='none' bgc='#33B7BC' clr='#FFFFFF' fse='15px'>VIEW ALL</Button>
+                        <Button w='215px' h='57px' br='10px' b='none' bgc='#33B7BC' clr='#FFFFFF' fse='15px'>
+                            <Link to='/cars' className='link' id='boldtext'>VIEW ALL</Link>
+                        </Button>
                     </div>
                 </div>
             </section>
