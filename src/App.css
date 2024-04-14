@@ -8,7 +8,7 @@
 }
 @font-face {
   font-family: 's700';
-  src: url('./fonts/Stolzl700.ttf');
+  src: url('../public/fonts/Stolzl700.ttf');
 }
 *{
   margin: 0;
