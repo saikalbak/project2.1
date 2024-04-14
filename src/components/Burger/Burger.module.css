@@ -1,0 +1,226 @@
+.mobileMenu {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 16px;
+    top: 0;
+    background-color: transparent;
+    left: 0;
+    right: 0;
+    height: 150px;
+    z-index: 9999;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 99999;
+    margin-right: 40px;
+}
+.logo2{
+    display: none;
+    z-index: 99999;
+    margin-left: 100px;
+}
+#logo2{
+    height: 50px;
+}
+.mobileMenu__btn {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 30px;
+    cursor: pointer;
+    transition: .4s;
+    z-index: 99999;
+}
+
+.mobileMenu__icon {
+    display: block;
+    position: relative;
+    background: #33B7BC;
+    width: 90%;
+    transition: .4s;
+}
+.mobileMenu__icon::after, .mobileMenu__icon::before {
+    content: "";
+    display: block;
+    position: absolute;
+    background: #FFFFFF;
+    width: 100%;
+    height: 2px;
+    transition: .4s;
+}
+.mobileMenu__icon::after {
+    top: 8px;
+}
+.mobileMenu__icon::before {
+    top: -8px;
+}
+.mobileMenu__container {
+    position: absolute;
+    text-align: start;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    top: 0px;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    height: 0;
+    opacity: 1;
+    transition: .5s;
+    overflow: hidden;
+    background-image: url(./images/bgcimg2.svg);
+    flex-direction: column;
+    overflow: hidden;
+}
+.mobileMenu__list {
+    transition: .5s;
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 70px;
+    padding: 100px 0 0 150px;
+}
+.mobileMenu__hr{
+    background-color: #272727;
+    width: 100%;
+    border: 1px solid #272727;
+    margin: 25px 0;
+}
+.mobileMenu__info{
+    margin: 45px 0 0 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1550px;
+}
+#mobileMenu__address{
+    color: #76828C;
+    font-size: 24px;
+}
+#mobileMenu__number{
+    font-size: 34px;
+}
+.mobileMenu__checkbox {
+    display: none;
+}
+.mobileMenu__checkbox:checked ~ .mobileMenu__nav {
+    opacity: 1;
+}
+.mobileMenu__checkbox:checked ~ .mobileMenu__container {
+    height: 100vh;
+}
+.mobileMenu__checkbox:checked ~ .mobileMenu__btn .mobileMenu__icon {
+    background: transparent;
+}
+.mobileMenu__checkbox:checked ~ .mobileMenu__btn .mobileMenu__icon::before, .mobileMenu__checkbox:checked ~ .mobileMenu__btn .mobileMenu__icon::after {
+    top: 0;
+}
+.mobileMenu__checkbox:checked ~ .mobileMenu__btn .mobileMenu__icon::after {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+.mobileMenu__checkbox:checked ~ .mobileMenu__btn .mobileMenu__icon::before {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+.links{
+    display: flex;
+    gap: 50px;
+    margin-left: -240px;
+}
+.link {
+    font-family: 's500';
+    text-decoration: none;
+    color: #FFFFFF;
+    transition: .5s;
+    transition: 0.6s all;
+    position: relative;
+    font-size: 15px;
+}
+.link::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    width: 0;
+    height: 4px;
+    background: #33B7BC;
+    transition: 0.6s all;
+    transform: skew(-25deg);
+}
+.link:hover::before{
+    width: 100%;
+}
+.link:hover {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+#link{
+    font-size: 54px;
+    line-height: 100px;
+}
+.selects{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+.none{
+    display: none;
+    z-index: 99999;
+}
+@media screen and (max-width:1440px){
+    .links{
+        display: none;
+    }
+    .selects{
+        display: none;
+    }
+    .none{
+        display: block;
+    }
+    .mobileMenu__info{
+        width: 100vw;
+    }
+}
+@media screen and (max-width:768px){
+    .logo{
+        display: none;
+    }
+    .logo2{
+        display: block;
+    }
+    #link{
+        font-size: 20px;
+        line-height: 70px;
+    }
+    .mobileMenu__list{
+        padding: 80px 0 0 30px;
+        gap: 20px;
+    }
+    .mobileMenu__info{
+        margin: 0px 0 0 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #mobileMenu__number{
+        font-size: 20px;
+    }
+    #mobileMenu__address{
+        display: none;
+    }
+    .mobileMenu__btn{
+        width: 45px;
+    }
+    .mobileMenu{
+        height: 100px;
+    }
+}

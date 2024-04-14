@@ -1,0 +1,44 @@
+.select-container2{
+    display: flex;
+    flex-direction: column;
+    text-align: end;
+    position: relative;
+}
+#select-checkbox2{
+    display: none;
+}
+.select-label2{
+    /* background-color: aqua; */
+    width: 135px;
+    font-family: 's700';
+    color: #FFFFFF;
+    padding: 10px;
+}
+.select-options2{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 20px;
+    padding: 30px 55px 30px 30px;
+    border-radius: 10px;
+    border: 1px solid #313131;
+    text-align: start;
+    position: absolute;
+    top: calc(100% + 5px);
+    left: 0;
+    z-index: 999;
+}
+@media screen and (max-width:768px){
+    #select-checkbox2{
+        display: block;
+            position: absolute;
+            opacity: 0;
+            width: 0;
+            height: 0;
+            margin: 0;
+            padding: 0;
+    }
+    .select-container2{
+        flex-direction: row-reverse;
+    }
+}

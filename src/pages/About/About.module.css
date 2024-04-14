@@ -1,0 +1,53 @@
+.margin{
+    height: 250px;
+}
+.section{
+    width: 80vw;
+    margin: auto auto 250px auto;
+}
+#section_title{
+    font-size: 70px;
+    line-height: 90px;
+}
+.section_text{
+    display: flex;
+    gap: 80px;
+    margin: 100px 0 60px 0;
+}
+#section_text{
+    color: #DBDBDB;
+    font-size: 20px;
+    line-height: 42px;
+}
+#section_boldtext{
+    font-size: 24px;
+    line-height: 52px;
+}
+@media screen and (max-width:768px){
+    .margin{
+        height: 130px;
+    }
+    .section{
+        width: 90vw;
+        margin: auto auto 80px auto;
+    }
+    #section_title{
+        font-size: 40px;
+        line-height: 48px;
+    }
+    .section_text{
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+        margin: 50px 0 30px 0;
+    }
+    #section_text{
+        color: #DBDBDB;
+        font-size: 16px;
+        line-height: 30px;
+    }
+    #section_boldtext{
+        font-size: 20px;
+        line-height: 35px;
+    }
+}

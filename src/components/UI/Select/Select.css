@@ -1,0 +1,30 @@
+.select-container{
+    display: flex;
+    flex-direction: column;
+    text-align: end;
+    position: relative;
+}
+#select-checkbox{
+    display: none;
+}
+.select-label{
+    /* background-color: aqua; */
+    width: 185px;
+    font-family: 's700';
+    color: #FFFFFF;
+    padding: 10px;
+}
+.select-options{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 20px;
+    padding: 30px 50px 30px 25px;
+    border-radius: 10px;
+    border: 1px solid #313131;
+    text-align: start;
+    position: absolute;
+    top: calc(100% + 5px);
+    left: 0;
+    z-index: 999;
+}

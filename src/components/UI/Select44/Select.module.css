@@ -1,0 +1,57 @@
+*{
+    font-family: 's500';
+    color: #FFFFFF;
+    font-size: 15px;
+}
+#city-select{
+    display: flex;
+    justify-content: end;
+}
+.customselect .title {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    border: none;
+    background: transparent;
+    width: 188px;
+    box-sizing: border-box;
+    padding: 2px;
+    line-height: 14px;
+    cursor: pointer;
+    text-align: right;
+    gap: 15px;
+}
+.customselect li {
+    cursor: pointer;
+    padding: 10px 0;
+    border-radius: 14px;
+    transition: .4s;
+}
+.customselect li:hover{
+    color: #33B7BC;
+}
+.customselect ul {
+    list-style: none;
+    display: none;
+    position: absolute;
+    z-index: 1000;
+    background: white;
+    width: 188px;
+    height: 203px;
+    border: 1px solid #313131;
+    border-radius: 14px;
+    background-color: #202020;
+    box-sizing: border-box;
+    padding: 25px 25px 0 25px;
+    margin-top: 20px;
+}
+.customselect.open ul {
+    display: block;
+}
+.hr{
+    width: 100%;
+    color: #202020;
+    border: 1px solid #313131;
+}
+@media screen and (max-width:768px){
+}
