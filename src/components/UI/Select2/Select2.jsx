@@ -4,7 +4,7 @@ import './Select2.css'
 function Select2() {
   const [isOpen, setIsOpen] = useState(false);
   const [selectedOption, setSelectedOption] = useState(null);
-  const options = ['ENG', 'RU', 'AR', 'KG'];
+  const options = ['ENG', 'RU', 'AR'];
 
   const handleCheckboxChange = () => {
     setIsOpen(!isOpen);

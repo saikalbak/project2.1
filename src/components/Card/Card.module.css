@@ -1,0 +1,40 @@
+.sectionCard{
+    padding: 40px;
+    width: 960px;
+    border: 1.5px solid #27323D;
+    border-radius: 20px;
+}
+#checkboxText{
+    font-size: 20px;
+    line-height: 60px;
+}
+#Text{
+    font-size: 18px;
+    line-height: 28px;
+    color: #FFFFFF;
+}
+.checkboxInput{
+    display: none;
+}
+.cards{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    margin-top: 70px;
+}
+@media screen and (max-width:768px){
+    .sectionCard{
+        padding: 20px;
+        width: 92vw;
+    }
+    #checkboxText{
+        font-size: 18px;
+        line-height: 45px;
+    }
+    #Text{
+        font-size: 15px;
+        line-height: 21px;
+    }
+}

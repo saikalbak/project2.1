@@ -1,6 +1,7 @@
 import React from 'react'
 import styles from './Conditions.module.css'
 import Layout from '../../components/Layout/Layout'
+import Card from '../../components/Card/Card'
 
 function Conditions() {
   return (
@@ -20,6 +21,7 @@ function Conditions() {
               <div className="title" id={styles.section_requirements_title}>Driving</div>
             </div>
           </div>
+          <Card/>
         </section>
     </Layout>
   )

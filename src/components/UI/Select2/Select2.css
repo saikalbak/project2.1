@@ -8,7 +8,6 @@
     display: none;
 }
 .select-label2{
-    /* background-color: aqua; */
     width: 135px;
     font-family: 's700';
     color: #FFFFFF;
@@ -29,16 +28,15 @@
     z-index: 999;
 }
 @media screen and (max-width:768px){
-    #select-checkbox2{
-        display: block;
-            position: absolute;
-            opacity: 0;
-            width: 0;
-            height: 0;
-            margin: 0;
-            padding: 0;
-    }
     .select-container2{
         flex-direction: row-reverse;
+        margin-right: -10px;
+    }
+    #select-checkbox2{
+        opacity: 0;
+        position: absolute;
+        display: flex;
+        top: 15px;
+        right: 5px;
     }
 }

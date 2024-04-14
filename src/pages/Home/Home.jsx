@@ -95,7 +95,7 @@ function Home() {
                 </div>
                 <div className="section2_btn">
                     <Button w='350px' h='72px' fse='18px' bgc='#33B7BC' b='none' br='10px'>
-                        <Link className='btn' to={'./conditions'}>VIEW ALL</Link>
+                        <Link className='btn' to={'/cars'}>VIEW ALL</Link>
                     </Button>
                 </div>
             </section>
