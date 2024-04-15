@@ -98,7 +98,7 @@ function Footer() {
                         <img src="./images/telegram (2) 1.svg" alt="" />
                     </Button>
                     <Button w='54px' h='54px' bgc='#43D854' br='54px'b='none'>
-                        <img src="/images/whatsapp (4) 1.svg" alt="" />
+                        <img src="./images/whatsapp (4) 1.svg" alt="" />
                     </Button>
                 </div>
                 </div>

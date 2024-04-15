@@ -8,8 +8,13 @@ function Home() {
   return (
     <Layout>
         <header>
+            <div className="img">
+            <img src="./images/bgcimg1.svg" alt="" className='header_img'/>
+            </div>
+            <div className="info">
             <div className="title" id='header_title'>Dubai</div>
             <div className="text" id='header_text'>LUXURY CAR RENTAL</div>
+            </div>
         </header>
         <main>
             <section className='section1'>
