@@ -5,6 +5,7 @@ header{
     text-align: center;
     flex-direction: column;
     justify-content: center;
+    margin-bottom: 180px;
 }
 .header_img{
     position: relative;
