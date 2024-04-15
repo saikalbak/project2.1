@@ -13,7 +13,7 @@ function Burger() {
           <div className={styles.mobileMenu__icon}></div>
         </label>
         <div className={styles.links}>
-          <Link className={styles.link}>Car List</Link>
+          <Link to='/cars' className={styles.link}>Car List</Link>
           <Link className={styles.link}>Yacht List</Link>
           <Link className={styles.link}>Chauffeur</Link>
         </div>
