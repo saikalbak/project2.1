@@ -223,4 +223,8 @@
     .mobileMenu{
         height: 100px;
     }
+    .mobileMenu__container{
+        background-color: #161516;
+        background-image: none;
+    }
 }

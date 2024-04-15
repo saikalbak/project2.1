@@ -1,0 +1,21 @@
+.DatePiker{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 's400';
+    font-size: 1.25rem;
+    display: flex;
+    border: none;
+   margin-left: 20px;
+}
+.DatePiker-input{
+    width: 55px;
+    padding: 0 15px;
+    background-color: transparent;
+}
+.line{
+    
+    height: 7px;
+    border: 1px solid #778292;
+    transform: rotate(90deg);
+}
